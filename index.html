@@ -193,20 +193,66 @@ our new method on synthetic and real captured scenes.
     </div>
     <!--/ Abstract. -->
 
+    <script>/*
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">Videos</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/watch?v=Ew_R81EjLfU"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
+    */</script>
+    <!--/ Paper video. --> 
   </div>
 </section>
 
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sphere.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/plant.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/pendulum.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sphere.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/plant.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/pendulum.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">      
@@ -220,7 +266,7 @@ our new method on synthetic and real captured scenes.
         <div class="content has-text-justified">
           <img src="static/images/pipeline.png" alt="Ablation">
           <p>
-            Overview: We introduce a new Lagrangian, particle based representation of motion. 
+            Overview: We introduce a new Lagrangian, particle based representation of motion. Each particle has a position in canonical space and in deformed space. This allows us to deform rays during rendering and to easily perform modal analysis on the particles. From this modal analysis, a synthesis can be performed to generate a new deformation state than will be rendered easily. Once the model is trained, synthesizing and rendering new views takes up to 10 seconds. 
           </p>
         </div>
         <br/>
